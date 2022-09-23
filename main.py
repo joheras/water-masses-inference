@@ -17,6 +17,8 @@ CTDPRS= float(args["ctdprs"])
 CTDPOT= float(args["ctdpot"])
 CTDSAL= float(args["ctdsal"])
 
+model = load('model_regr_et_combined.joblib') 
+labels = ['EDW','ENACW12', 'WNACW7', 'SPMW', 'SACWT12', 'SACWE12', 'WW', 'AAIW5','AAIW3', 'MW', 'LSW', 'ISOW', 'DSOW', 'CDW', 'WSDW', 'SAIW']
 prediction = model.predict([[Latitude,Longitude,CTDPRS,CTDPOT, CTDSAL]])
 probs = prediction[0]
 res = {labels[i]: float(probs[i])*100 for i in range(len(labels))}
