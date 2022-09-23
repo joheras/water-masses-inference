@@ -30,7 +30,7 @@ python main.py --latitude -57.4997 --longitude -31.5992 --ctdprs 347.9 --ctdpot 
 
 This will print the predictions and also generate a image file called prediction.png as the following one. 
 
-![Prediction](Prediction.png)
+![Prediction](prediction.png)
 
 
 
