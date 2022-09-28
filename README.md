@@ -4,7 +4,8 @@ Code for applying the model developed in the paper "Application of multi-regress
 
 The model can be used in three different ways:
 - As a [HuggingFace space](https://huggingface.co/spaces/joheras/water-masses-inference).
-- As a [Jupyter notebook](Inference.ipynb).
+- As a [Jupyter notebook to predict a single input](Inference.ipynb).
+- As a [Jupyter notebook to predict from a csv file](inference_file_input.ipynb).
 - As a local script. 
 
 The first option does not require installation, for the latter two you need to install the packages indicated in the requirements file and clone the current repository.
